@@ -1,6 +1,9 @@
 Simple Openflow Topology on multiple sites
 =====
 
+
+### Installation
+
 To be able to carry out experimentation omni must be downloaded and configured as follows
 
 - Download omni from http://trac.gpolab.bbn.com/gcf/wiki/Omni
@@ -17,6 +20,8 @@ To be able to carry out experimentation omni must be downloaded and configured a
 	- iminds2VM=urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm,https://www.wall2.ilabt.iminds.be:12369/protogeni/xmlrpc/am/2.0a
 
 
+### Setup
+
 To request resources on testbeds there are several steps that must be taken:
 
 - In order to carry out experimentation a slice must first be requested as follows
@@ -29,6 +34,7 @@ To request resources on testbeds there are several steps that must be taken:
 	- `path/to/omni.py createsliver NAME_OF_SLICE -a NAME_OF_OF_AM path/to/rspec/file.rspec`
 - The return will contain details about the Flowspace requested. The time till the sliver expires will also be returned.
 
+### Closing and Extending slivers/slices
 
 To close a connection two methods can be employed. Firstly by just allowing the slice and slivers to expire and secondly by sending commands to release the resources consumed by each sliver. The slice must still expire naturally. On each am that a sliver is currently active run the following command. 
 
