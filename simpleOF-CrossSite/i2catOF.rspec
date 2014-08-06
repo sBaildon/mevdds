@@ -20,8 +20,8 @@
           <openflow:datapath component_id="urn:publicid:IDN+openflow:optin:i2cat.of_ocf+datapath:00:10:00:00:00:00:00:03" 
                              component_manager_id="urn:publicid:IDN+openflow:optin:i2cat.of_optin+authority+am"
                              dpid="00:10:00:00:00:00:00:03">
-             <openflow:port name="GBE0/3" num="4"/>
-             <openflow:port name="GBE0/3" num="9"/>
+             <openflow:port name="GBE0/4" num="4"/>
+             <openflow:port name="GBE0/9" num="9"/>
              <openflow:port name="GBE0/13" num="13"/>
              <openflow:port name="GBE0/14" num="14"/>
              <openflow:port name="GBE0/15" num="15"/>
