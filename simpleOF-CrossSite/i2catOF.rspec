@@ -11,30 +11,9 @@
    <openflow:sliver email="d.butterworth@lancaster.ac.uk" description="MEVDDS-SimpleOF">
       <openflow:controller url="tcp:10.216.12.60:6633" type="primary"/>
        <openflow:group name="fs1">
-          <openflow:datapath component_id="urn:publicid:IDN+openflow:optin:i2cat.of_ocf+datapath:00:10:00:00:00:00:00:01" 
-                             component_manager_id="urn:publicid:IDN+openflow:optin:i2cat.of_optin+authority+am" 
-                             dpid="00:10:00:00:00:00:00:01">
-             <openflow:port name="GBE0/4" num="4"/>
-             <openflow:port name="GBE0/12" num="12"/>
-          </openflow:datapath>
-          <openflow:datapath component_id="urn:publicid:IDN+openflow:optin:i2cat.of_ocf+datapath:00:10:00:00:00:00:00:03" 
-                             component_manager_id="urn:publicid:IDN+openflow:optin:i2cat.of_optin+authority+am"
-                             dpid="00:10:00:00:00:00:00:03">
-             <openflow:port name="GBE0/4" num="4"/>
-             <openflow:port name="GBE0/9" num="9"/>
-             <openflow:port name="GBE0/13" num="13"/>
-             <openflow:port name="GBE0/14" num="14"/>
-             <openflow:port name="GBE0/15" num="15"/>
-          </openflow:datapath>
-          <openflow:datapath component_id="urn:publicid:IDN+openflow:optin:i2cat.of_ocf+datapath:00:10:00:00:00:00:00:04" 
-                             component_manager_id="urn:publicid:IDN+openflow:optin:i2cat.of_optin+authority+am"
-                             dpid="00:10:00:00:00:00:00:04">
-             <openflow:port name="GBE0/1" num="1"/>
-             <openflow:port name="GBE0/3" num="3"/>
-             <openflow:port name="GBE0/13" num="13"/>
-             <openflow:port name="GBE0/14" num="14"/>
-             <openflow:port name="GBE0/15" num="15"/>
-          </openflow:datapath>
+          <openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:01" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:01">
+            <openflow:port num="12" name="GBE0/12"/>
+  </openflow:datapath>
        </openflow:group>
        <openflow:match>
           <openflow:use-group name="fs1" />
