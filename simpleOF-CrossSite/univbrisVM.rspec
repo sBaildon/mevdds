@@ -16,7 +16,7 @@
 			<hd-setup-type>full-file-image</hd-setup-type> 
 			<hd-origin-path>debian7uob/debian7uob.img</hd-origin-path> 
 			<virtualization-setup-type>hvm</virtualization-setup-type> 
-			<memory-mb>512</memory-mb>
+			<memory-mb>1024</memory-mb>
 			<interfaces>
 				<interface ismgmt="true">
 					<name>eth0</name>
@@ -44,7 +44,35 @@
 			<hd-setup-type>full-file-image</hd-setup-type> 
 			<hd-origin-path>debian7uob/debian7uob.img</hd-origin-path> 
 			<virtualization-setup-type>hvm</virtualization-setup-type> 
-			<memory-mb>512</memory-mb>
+			<memory-mb>1024</memory-mb>
+			<interfaces>
+				<interface ismgmt="true">
+					<name>eth0</name>
+					<mac>00:16:3E:2D:AE:27</mac>
+					<ip>10.216.22.60</ip>
+					<mask>255.255.255.0</mask>
+					<gw>10.216.20.1</gw>
+					<dns1>8.8.8.8</dns1>
+					<dns2>4.2.2.1</dns2>
+				</interface>
+			</interfaces>
+		</sliver>
+	</node>
+	<node component_id="urn:publicid:IDN+univbris:vtam+node+cseedelphi" component_manager_id="urn:publicid:IDN+univbris:vtam+cm" component_name="urn:publicid:IDN+univbris:vtam+node+cseedelphi" exclusive="false">
+		<sliver>
+			<name>nodeB2</name>
+			<uuid>nodeB2</uuid>
+			<project-id>mevdds</project-id> 
+			<slice-id>testOF01</slice-id>
+			<slice-name>MEVDDS-SimpleOF</slice-name> 
+			<operating-system-type>GNU/Linux</operating-system-type>
+			<operating-system-version>7.0</operating-system-version>
+			<operating-system-distribution>Debian</operating-system-distribution>
+			<server-id>cseedelphi</server-id>
+			<hd-setup-type>full-file-image</hd-setup-type> 
+			<hd-origin-path>debian7uob/debian7uob.img</hd-origin-path> 
+			<virtualization-setup-type>hvm</virtualization-setup-type> 
+			<memory-mb>1024</memory-mb>
 			<interfaces>
 				<interface ismgmt="true">
 					<name>eth0</name>
