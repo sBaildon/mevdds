@@ -10,17 +10,13 @@
    <openflow:sliver email="d.butterworth@lancaster.ac.uk" description="MEVDDS-SimpleOF">
       <openflow:controller url="tcp:10.216.22.80:6633" type="primary"/>
        <openflow:group name="fs1">
-          <openflow:datapath component_manager_id="urn:publicid:IDN+openflow:ofam:univbris+authority+cm" 
-                             component_id="urn:publicid:IDN+openflow:ofam:univbris+datapath+05:00:00:00:00:00:00:01" 
-                             dpid="05:00:00:00:00:00:00:01">
-             <openflow:port name="GBE0/6" num="6"/> 
-	     <openflow:port name="GBE0/5" num="5"/>
+          <openflow:datapath component_id="urn:publicid:IDN+openflow:ofam:univbris+datapath+05:00:00:00:00:00:00:01" component_manager_id="urn:publicid:IDN+openflow:ofam:univbris+authority+cm" dpid="05:00:00:00:00:00:00:01">
+            <openflow:port num="6" name="GBE0/6"/>
+            <openflow:port num="22" name="GBE0/22"/>
           </openflow:datapath>
-	   <openflow:datapath component_id="urn:publicid:IDN+openflow:ofam:univbris+datapath+05:00:00:00:00:00:00:03" 
-                             component_manager_id="urn:publicid:IDN+openflow:ofam:univbris+authority+cm" 
-                             dpid="05:00:00:00:00:00:00:03">
-             <openflow:port name="GBE0/19" num="18"/> 
-	     <openflow:port name="GBE0/7" num="7"/>
+          <openflow:datapath component_id="urn:publicid:IDN+openflow:ofam:univbris+datapath+05:00:00:00:00:00:00:04" component_manager_id="urn:publicid:IDN+openflow:ofam:univbris+authority+cm" dpid="05:00:00:00:00:00:00:04">
+            <openflow:port num="8" name="GBE0/8"/>
+            <openflow:port num="11" name="GBE0/11"/>
           </openflow:datapath>
        </openflow:group>
        <openflow:match>
