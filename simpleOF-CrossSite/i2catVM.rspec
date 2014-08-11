@@ -23,16 +23,16 @@
 		<sliver>
 			<name>nodeC0</name>
 			<uuid>nodeC0</uuid>
-			<project-id>mevdds</project-id> 
+			<project-id>mevdds</project-id>
 			<slice-id>testOF01</slice-id>
-			<slice-name>MEVDDS-SimpleOF</slice-name> 
+			<slice-name>MEVDDS-SimpleOF</slice-name>
 			<operating-system-type>GNU/Linux</operating-system-type>
 			<operating-system-version>7.0</operating-system-version>
 			<operating-system-distribution>Debian</operating-system-distribution>
 			<server-id>Verdaguer</server-id>
-			<hd-setup-type>file-image</hd-setup-type> 
-			<hd-origin-path>default/test/wheezy</hd-origin-path> 
-			<virtualization-setup-type>paravirtualization</virtualization-setup-type> 
+			<hd-setup-type>file-image</hd-setup-type>
+			<hd-origin-path>default/test/wheezy</hd-origin-path>
+			<virtualization-setup-type>paravirtualization</virtualization-setup-type>
 			<memory-mb>1024</memory-mb>
 		</sliver>
 	</node>
@@ -40,16 +40,16 @@
 		<sliver>
 			<name>nodeC1</name>
 			<uuid>nodeC1</uuid>
-			<project-id>mevdds</project-id> 
+			<project-id>mevdds</project-id>
 			<slice-id>testOF01</slice-id>
-			<slice-name>MEVDDS-SimpleOF</slice-name> 
+			<slice-name>MEVDDS-SimpleOF</slice-name>
 			<operating-system-type>GNU/Linux</operating-system-type>
 			<operating-system-version>7.0</operating-system-version>
 			<operating-system-distribution>Debian</operating-system-distribution>
 			<server-id>Verdaguer</server-id>
-			<hd-setup-type>file-image</hd-setup-type> 
-			<hd-origin-path>default/test/wheezy</hd-origin-path> 
-			<virtualization-setup-type>paravirtualization</virtualization-setup-type> 
+			<hd-setup-type>file-image</hd-setup-type>
+			<hd-origin-path>default/test/wheezy</hd-origin-path>
+			<virtualization-setup-type>paravirtualization</virtualization-setup-type>
 			<memory-mb>1024</memory-mb>
 		</sliver>
 	</node>

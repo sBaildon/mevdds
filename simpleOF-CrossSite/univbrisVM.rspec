@@ -6,16 +6,16 @@
 		<sliver>
 			<name>nodeB0</name>
 			<uuid>nodeB0</uuid>
-			<project-id>mevdds</project-id> 
+			<project-id>mevdds</project-id>
 			<slice-id>testOF01</slice-id>
-			<slice-name>MEVDDS-SimpleOF</slice-name> 
+			<slice-name>MEVDDS-SimpleOF</slice-name>
 			<operating-system-type>GNU/Linux</operating-system-type>
 			<operating-system-version>7.0</operating-system-version>
 			<operating-system-distribution>Debian</operating-system-distribution>
 			<server-id>cseedurham</server-id>
-			<hd-setup-type>full-file-image</hd-setup-type> 
-			<hd-origin-path>debian7uob/debian7uob.img</hd-origin-path> 
-			<virtualization-setup-type>hvm</virtualization-setup-type> 
+			<hd-setup-type>full-file-image</hd-setup-type>
+			<hd-origin-path>debian7uob/debian7uob.img</hd-origin-path>
+			<virtualization-setup-type>hvm</virtualization-setup-type>
 			<memory-mb>1024</memory-mb>
 			<interfaces>
 				<interface ismgmt="true">
@@ -34,16 +34,16 @@
 		<sliver>
 			<name>nodeB1</name>
 			<uuid>nodeB1</uuid>
-			<project-id>mevdds</project-id> 
+			<project-id>mevdds</project-id>
 			<slice-id>testOF01</slice-id>
-			<slice-name>MEVDDS-SimpleOF</slice-name> 
+			<slice-name>MEVDDS-SimpleOF</slice-name>
 			<operating-system-type>GNU/Linux</operating-system-type>
 			<operating-system-version>7.0</operating-system-version>
 			<operating-system-distribution>Debian</operating-system-distribution>
 			<server-id>cseedurham</server-id>
-			<hd-setup-type>full-file-image</hd-setup-type> 
-			<hd-origin-path>debian7uob/debian7uob.img</hd-origin-path> 
-			<virtualization-setup-type>hvm</virtualization-setup-type> 
+			<hd-setup-type>full-file-image</hd-setup-type>
+			<hd-origin-path>debian7uob/debian7uob.img</hd-origin-path>
+			<virtualization-setup-type>hvm</virtualization-setup-type>
 			<memory-mb>1024</memory-mb>
 			<interfaces>
 				<interface ismgmt="true">
@@ -58,8 +58,5 @@
 			</interfaces>
 		</sliver>
 	</node>
-	
   </network>
 </RSpec>
-
-
