@@ -9,7 +9,7 @@
               http://www.geni.net/resources/rspec/ext/openflow/3/of-resv.xsd"
     type="request">
    <openflow:sliver email="d.butterworth@lancaster.ac.uk" description="MEVDDS-SimpleOF">
-      <openflow:controller url="tcp:10.216.12.71:6633" type="primary"/>
+      <openflow:controller url="tcp:10.216.12.43:6633" type="primary"/>
        <openflow:group name="fs1">
           <openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:01" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:01">
             <openflow:port num="4" name="GBE0/4"/>
@@ -24,6 +24,7 @@
           <openflow:use-group name="fs1" />
           <openflow:packet>
             <openflow:dl_type value="0x800" />
+            <openflow:dl_vlan value="180"/>
           </openflow:packet>
        </openflow:match>
    </openflow:sliver>
