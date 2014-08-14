@@ -9,28 +9,28 @@
 	http://www.geni.net/resources/rspec/ext/openflow/3/of-resv.xsd"
 	type="request">
 	<openflow:sliver email="d.butterworth@lancaster.ac.uk" description="MEVDDS-SimpleOF">
-	  <openflow:controller url="tcp:10.216.12.43:6633" type="primary"/>
-	  <openflow:group name="fs1">
-		  <openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:01" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:01">
-			<openflow:port num="4" name="GBE0/4"/>
-			<openflow:port num="9" name="GBE0/9"/>
-			<openflow:port num="12" name="GBE0/12"/>
-		</openflow:datapath>
-		<openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:03" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:03">
-			<openflow:port num="1" name="GBE0/1"/>
-			<openflow:port num="5" name="GBE0/5"/>
-			<openflow:port num="12" name="GBE0/12"/>
-		</openflow:datapath>
-		<openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:05" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:05">
-			<openflow:port num="3" name="GBE0/3"/>
-			<openflow:port num="11" name="GBE0/11"/>
-		</openflow:datapath>
-	</openflow:group>
-	<openflow:match>
-	  <openflow:use-group name="fs1" />
-	  <openflow:packet>
-		<openflow:dl_vlan value="180"/>
-	</openflow:packet>
-</openflow:match>
-</openflow:sliver>
+		<openflow:controller url="tcp:10.216.12.43:6633" type="primary"/>
+		<openflow:group name="fs1">
+			<openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:01" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:01">
+				<openflow:port num="4" name="GBE0/4"/>
+				<openflow:port num="9" name="GBE0/9"/>
+				<openflow:port num="12" name="GBE0/12"/>
+			</openflow:datapath>
+			<openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:03" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:03">
+				<openflow:port num="1" name="GBE0/1"/>
+				<openflow:port num="5" name="GBE0/5"/>
+				<openflow:port num="12" name="GBE0/12"/>
+			</openflow:datapath>
+			<openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:05" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:05">
+				<openflow:port num="3" name="GBE0/3"/>
+				<openflow:port num="11" name="GBE0/11"/>
+			</openflow:datapath>
+		</openflow:group>
+		<openflow:match>
+			<openflow:use-group name="fs1" />
+			<openflow:packet>
+				<openflow:dl_vlan value="180"/>
+			</openflow:packet>
+		</openflow:match>
+	</openflow:sliver>
 </rspec>
