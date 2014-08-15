@@ -1,3 +1,3 @@
-bash 01-start.sh
-bash 02-python.sh
-bash 03-tools.sh
+bash generic/shared/python-setup.sh
+bash generic/shared/python-install.sh
+bash generic/tools/01-tools.sh
