@@ -2,11 +2,8 @@
 
 # This script must be ran as root
 
-## Get appropriate JDK version
-echo "Update"
-apt-get update
-echo "Install openjdk-7-jdk"
-apt-get install -y openjdk-7-jdk
+## cd into appropriate dir (should be /root)
+cd ~/
 
 ## install ant unzip
 echo "Install ant + unzip"
