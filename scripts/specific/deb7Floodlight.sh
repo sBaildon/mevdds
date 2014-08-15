@@ -3,7 +3,10 @@
 # This script must be ran as root
 
 ## Get appropriate JDK version
-	## Dependant on the version of Debian
+echo "Update"
+apt-get update
+echo "Install openjdk-7-jdk"
+apt-get install -y openjdk-7-jdk
 
 ## install ant unzip
 echo "Install ant + unzip"
