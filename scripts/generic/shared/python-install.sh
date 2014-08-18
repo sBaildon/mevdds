@@ -1,3 +1,5 @@
+echo "Python-setup"
+
 #Get Python 2.7 if necessary
 if [[ $(python --version 2>&1) == *2\.6.* ]]
 then
@@ -7,7 +9,7 @@ then
     cd ~/Python-2.7.3
     ./configure --prefix=/usr --enable-shared
     make
-    sudo make install
+    make install
 fi
 
 # Go to home directory

@@ -16,8 +16,8 @@ if grep -q 6.* /etc/debian_version; then
 	apt-get update
 
 	echo "Accepting oracle licences.."
-	echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
-	echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
+	echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
+	echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
 
 	echo "Install"
 	apt-get install -y oracle-java7-installer
