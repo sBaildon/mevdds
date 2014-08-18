@@ -4,7 +4,7 @@ tar -zxf ~/zeromq-4.0.4.tar.gz --directory ~
 cd ~/zeromq-4.0.4
 ./configure
 make
-sudo make install
+make install
 
 # Go to home directory
 cd ~

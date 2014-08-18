@@ -7,7 +7,7 @@ then
     cd ~/Python-2.7.3
     ./configure --prefix=/usr --enable-shared
     make
-    sudo make install
+    make install
 fi
 
 # Go to home directory
