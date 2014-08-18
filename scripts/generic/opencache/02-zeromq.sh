@@ -1,3 +1,5 @@
+echo "ZeroMQ install + configure"
+
 # Get ZeroMQ
 wget -P ~ http://download.zeromq.org/zeromq-4.0.4.tar.gz
 tar -zxf ~/zeromq-4.0.4.tar.gz --directory ~

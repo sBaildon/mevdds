@@ -1,3 +1,5 @@
+echo "Python-setup"
+
 # Update repositories
 apt-get update
 

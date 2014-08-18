@@ -1,3 +1,5 @@
+echo "Python-setup"
+
 #Get Python 2.7 if necessary
 if [[ $(python --version 2>&1) == *2\.6.* ]]
 then

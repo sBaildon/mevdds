@@ -1,3 +1,5 @@
+echo "MongoDB install + configure"
+
 # Kill running mongoDBs
 pkill mongo
 
