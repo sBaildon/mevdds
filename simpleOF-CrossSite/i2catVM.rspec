@@ -7,7 +7,7 @@
 			<name>ofcontr</name>
 			<uuid>ofcontr</uuid>
 			<project-id>mevdds</project-id> 
-			<slice-id>testOF01</slice-id>
+			<slice-id>mevdds</slice-id>
 			<slice-name>MEVDDS-SimpleOF</slice-name> 
 			<operating-system-type>GNU/Linux</operating-system-type>
 			<operating-system-version>7.0</operating-system-version>
@@ -18,11 +18,13 @@
 			<virtualization-setup-type>paravirtualization</virtualization-setup-type> 
 			<memory-mb>1024</memory-mb>
 		</sliver>
+	</node>
+	<node component_manager_id="urn:publicid:IDN+i2cat:vtam+cm" component_id="urn:publicid:IDN+i2cat:vtam+node+Verdaguer" exclusive="false" component_name="urn:publicid:IDN+i2cat:vtam+node+Verdaguer">
 		<sliver>
-			<name>nodeC0</name>
-			<uuid>nodeC0</uuid>
+			<name>ocCont</name>
+			<uuid>ocCont</uuid>
 			<project-id>mevdds</project-id>
-			<slice-id>testOF01</slice-id>
+			<slice-id>mevdds</slice-id>
 			<slice-name>MEVDDS-SimpleOF</slice-name>
 			<operating-system-type>GNU/Linux</operating-system-type>
 			<operating-system-version>7.0</operating-system-version>
@@ -36,10 +38,10 @@
 	</node>
 	<node component_manager_id="urn:publicid:IDN+i2cat:vtam+cm" component_id="urn:publicid:IDN+i2cat:vtam+node+March" exclusive="false" component_name="urn:publicid:IDN+i2cat:vtam+node+March">
 		<sliver>
-			<name>nodeC1</name>
-			<uuid>nodeC1</uuid>
+			<name>contentServer</name>
+			<uuid>contentServer</uuid>
 			<project-id>mevdds</project-id>
-			<slice-id>testOF01</slice-id>
+			<slice-id>mevdds</slice-id>
 			<slice-name>MEVDDS-SimpleOF</slice-name>
 			<operating-system-type>GNU/Linux</operating-system-type>
 			<operating-system-version>7.0</operating-system-version>
