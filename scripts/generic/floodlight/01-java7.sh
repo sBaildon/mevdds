@@ -29,6 +29,6 @@ elif grep -q 7.* /etc/debian_version; then
 	echo "Install openjdk-7-jdk"
 	apt-get install -y openjdk-7-jdk
 else
-	echo "unknown debian version"
+	echo "Unknown Debian version"
 	return -1;
 fi
