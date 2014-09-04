@@ -6,20 +6,19 @@
 cd ~/
 
 ## install ant unzip
-echo "Install ant + unzip"
-apt-get install -y ant unzip
+echo "[Install ant + unzip]" | tee -a /var/log/mevdds/floodlight.log
+apt-get install -y ant unzip >> /var/log/mevdds/floodlight.log
+
 ## wget zip file
 echo "wget floodlight v0.90"
-wget https://github.com/floodlight/floodlight/archive/v0.90.zip
+wget https://github.com/floodlight/floodlight/archive/v0.90.zip -a /var/log/mevdds/floodlight.log
 
 ## unzip floodlight
-echo "unzip floodlight"
-unzip v0.90.zip
+echo "[unzip floodlight]" | tee -a /var/log/mevdds/floodlight.log
+unzip v0.90.zip >> /var/log/mevdds/floodlight.log
 
-## cd into floodlight
-echo "cd floodlight-0.90"
 cd floodlight-0.90
 
 ## compile floodlight
-echo "ant"
-ant
+echo "[Compililing with ant]" | tee -a /var/log/mevdds/floodlight.log
+ant >> /var/log/mevdds/floodlight.log
