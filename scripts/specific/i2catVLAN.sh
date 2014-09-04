@@ -5,7 +5,7 @@ IP=$2
 
 ifconfig eth2 up
 
-vconfig add eth2 $VLAN
+ifconfig add eth2 $VLAN
 
 ifconfig eth2.$VLAN $IP/24 up
 
