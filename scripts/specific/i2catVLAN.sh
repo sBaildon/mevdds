@@ -3,15 +3,13 @@
 VLAN=$1
 IP=$2
 
-#ifconfig eth2 up
-
-#ifconfig add eth2 $VLAN
-
-#ifconfig eth2.$VLAN $IP/24 up
-
-#ifconfig  eth2.$VLAN mtu 1496
+apt-get install -y vlan
 
 
-ip link add link eth2 name eth2.$VLAN type vlan $VLAN
+ifconfig eth2 up
 
-ip addr add $IP/24 dev eth2.$VLAN
+vconfig add eth2 $VLAN
+
+ifconfig eth2.$VLAN $IP/24 up
+
+ifconfig  eth2.$VLAN mtu 1496
