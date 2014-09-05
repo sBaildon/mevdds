@@ -17,7 +17,7 @@ wget https://github.com/sBaildon/floodlight/archive/master.zip -a /var/log/mevdd
 echo "[unzip floodlight]" | tee -a /var/log/mevdds/floodlight.log
 unzip master.zip >> /var/log/mevdds/floodlight.log
 
-cd floodlight
+cd floodlight-master
 
 ## compile floodlight
 echo "[Compililing with ant]" | tee -a /var/log/mevdds/floodlight.log
