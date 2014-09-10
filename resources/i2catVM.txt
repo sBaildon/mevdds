@@ -1,0 +1,149 @@
+11:05:08 INFO    : Loading agg_nick_cache file '/home/david/.gcf/agg_nick_cache'
+11:05:08 INFO    : Loading config file /home/david/.gcf/omni_config
+11:05:08 INFO    : Using control framework pg
+11:05:08 INFO    : Substituting AM nickname i2catVM with URL https://137.222.204.27:5001/xmlrpc/sfa/, URN urn:publicid:IDN+i2catvtam+authority+cm
+11:05:09 WARNING : AM doesn't support default RSpec version GENI 3. Returning RSpec in only supported format. Next time at this AM, call Omni with '-t OcfVt 1'.
+11:05:09 INFO    : Listed advertised resources at 1 out of 1 possible aggregates.
+11:05:09 INFO    : <?xml version="1.0"?>
+11:05:09 INFO    :   <!-- Resources at AM:
+	URN: urn:publicid:IDN+i2catvtam+authority+cm
+	URL: https://137.222.204.27:5001/xmlrpc/sfa/
+ -->
+11:05:09 INFO    :   
+<rspec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="advertisement" xsi:schemaLocation="http://www.protogeni.net/resources/rspec/2 https://github.com/fp7-ofelia/ocf/blob/ocf.rspecs/server_schema.xsd http://www.protogeni.net/resources/rspec/2/ad.xsd" expires="2014-09-01T12:34:00Z" generated="2014-09-01T11:34:00Z">
+  <network name=".i2cat">
+    <node component_manager_id="urn:publicid:IDN+i2cat:vtam+cm" component_id="urn:publicid:IDN+i2cat:vtam+node+Rodoreda" exclusive="false" component_name="urn:publicid:IDN+i2cat:vtam+node+Rodoreda">
+      <hostname>rodoreda.ctx.i2cat.net</hostname>
+      <name>Rodoreda</name>
+      <operating_system_type>GNU/Linux</operating_system_type>
+      <operating_system_distribution>Debian</operating_system_distribution>
+      <operating_system_version>6.0</operating_system_version>
+      <virtualization_technology>xen</virtualization_technology>
+      <cpus_number>None</cpus_number>
+      <cpu_frequency>None</cpu_frequency>
+      <memory>None</memory>
+      <hdd_space_GB>None</hdd_space_GB>
+      <agent_url>https://rodoreda.ctx.i2cat.net:9229/</agent_url>
+      <location country="Spain" longitude="2.11191386334" latitude="41.3873269495"/>
+      <service type="Range">
+        <type>IP_Range</type>
+        <name>i2cat</name>
+        <start_value>10.216.12.25</start_value>
+        <end_value>10.216.15.254</end_value>
+      </service>
+      <service type="Range">
+        <type>MAC_Range</type>
+        <name>i2cat</name>
+        <start_value>02:03:00:00:00:00</start_value>
+        <end_value>02:03:FF:FF:FF:FF</end_value>
+      </service>
+      <service type="NetworkInterface">
+        <from_server_interface_name>eth1.999</from_server_interface_name>
+        <to_network_interface_port>None</to_network_interface_port>
+      </service>
+      <service type="NetworkInterface">
+        <from_server_interface_name>eth2</from_server_interface_name>
+        <to_network_interface_id>00:10:00:00:00:00:00:03</to_network_interface_id>
+        <to_network_interface_port>12</to_network_interface_port>
+      </service>
+      <service type="NetworkInterface">
+        <from_server_interface_name>eth3</from_server_interface_name>
+        <to_network_interface_id>00:10:00:00:00:00:00:05</to_network_interface_id>
+        <to_network_interface_port>12</to_network_interface_port>
+      </service>
+    </node>
+    <node component_manager_id="urn:publicid:IDN+i2cat:vtam+cm" component_id="urn:publicid:IDN+i2cat:vtam+node+March" exclusive="false" component_name="urn:publicid:IDN+i2cat:vtam+node+March">
+      <hostname>march.ctx.i2cat.net</hostname>
+      <name>March</name>
+      <operating_system_type>GNU/Linux</operating_system_type>
+      <operating_system_distribution>Debian</operating_system_distribution>
+      <operating_system_version>6.0</operating_system_version>
+      <virtualization_technology>xen</virtualization_technology>
+      <cpus_number>None</cpus_number>
+      <cpu_frequency>None</cpu_frequency>
+      <memory>None</memory>
+      <hdd_space_GB>None</hdd_space_GB>
+      <agent_url>https://10.216.140.3:9229/</agent_url>
+      <location country="Spain" longitude="2.11191386334" latitude="41.3873269495"/>
+      <service type="Range">
+        <type>IP_Range</type>
+        <name>i2cat</name>
+        <start_value>10.216.12.25</start_value>
+        <end_value>10.216.15.254</end_value>
+      </service>
+      <service type="Range">
+        <type>MAC_Range</type>
+        <name>i2cat</name>
+        <start_value>02:03:00:00:00:00</start_value>
+        <end_value>02:03:FF:FF:FF:FF</end_value>
+      </service>
+      <service type="NetworkInterface">
+        <from_server_interface_name>eth1.999</from_server_interface_name>
+        <to_network_interface_port>None</to_network_interface_port>
+      </service>
+      <service type="NetworkInterface">
+        <from_server_interface_name>eth2</from_server_interface_name>
+        <to_network_interface_id>00:10:00:00:00:00:00:04</to_network_interface_id>
+        <to_network_interface_port>12</to_network_interface_port>
+      </service>
+      <service type="NetworkInterface">
+        <from_server_interface_name>eth3</from_server_interface_name>
+        <to_network_interface_id>00:10:00:00:00:00:00:05</to_network_interface_id>
+        <to_network_interface_port>11</to_network_interface_port>
+      </service>
+    </node>
+    <node component_manager_id="urn:publicid:IDN+i2cat:vtam+cm" component_id="urn:publicid:IDN+i2cat:vtam+node+Verdaguer" exclusive="false" component_name="urn:publicid:IDN+i2cat:vtam+node+Verdaguer">
+      <hostname>verdaguer.ctx.i2cat.net</hostname>
+      <name>Verdaguer</name>
+      <operating_system_type>GNU/Linux</operating_system_type>
+      <operating_system_distribution>Debian</operating_system_distribution>
+      <operating_system_version>6.0</operating_system_version>
+      <virtualization_technology>xen</virtualization_technology>
+      <cpus_number>None</cpus_number>
+      <cpu_frequency>None</cpu_frequency>
+      <memory>None</memory>
+      <hdd_space_GB>None</hdd_space_GB>
+      <agent_url>https://verdaguer.ctx.i2cat.net:9229/</agent_url>
+      <location country="Spain" longitude="2.11191386334" latitude="41.3873269495"/>
+      <service type="Range">
+        <type>IP_Range</type>
+        <name>i2cat</name>
+        <start_value>10.216.12.25</start_value>
+        <end_value>10.216.15.254</end_value>
+      </service>
+      <service type="Range">
+        <type>MAC_Range</type>
+        <name>i2cat</name>
+        <start_value>02:03:00:00:00:00</start_value>
+        <end_value>02:03:FF:FF:FF:FF</end_value>
+      </service>
+      <service type="NetworkInterface">
+        <from_server_interface_name>eth1.999</from_server_interface_name>
+        <to_network_interface_port>None</to_network_interface_port>
+      </service>
+      <service type="NetworkInterface">
+        <from_server_interface_name>eth2</from_server_interface_name>
+        <to_network_interface_id>00:10:00:00:00:00:00:01</to_network_interface_id>
+        <to_network_interface_port>12</to_network_interface_port>
+      </service>
+      <service type="NetworkInterface">
+        <from_server_interface_name>eth3</from_server_interface_name>
+        <to_network_interface_id>00:10:00:00:00:00:00:02</to_network_interface_id>
+        <to_network_interface_port>12</to_network_interface_port>
+      </service>
+    </node>
+  </network>
+</rspec>
+
+11:05:09 INFO    :  ------------------------------------------------------
+11:05:09 INFO    :  Completed listresources:
+
+  Options as run:
+		aggregate: ['i2catVM']
+		framework: pg
+
+  Args: listresources
+
+  Result Summary: Queried resources from 1 of 1 aggregate(s).
+ 
+11:05:09 INFO    :  ======================================================
