@@ -21,4 +21,4 @@ echo "[MongoDB configure]" | tee -a  /var/log/mevdds/opencache.log
 pkill mongo
 
 mkdir -p /data/db
-mongod --fork --logpath=/var/log/mevdds/mongo_opencache  >> /var/log/mevdds/opencache.log
+mongod --fork --logpath=/var/log/mevdds/mongo_opencache  >> /var/log/mevdds/opencache.log --nojournal
