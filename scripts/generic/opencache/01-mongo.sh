@@ -7,7 +7,7 @@ echo "[MongoDB install]" | tee -a /var/log/mevdds/opencache.log
 # Adding key
 apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10 >> /var/log/mevdds/opencache.log
 # Adding repo
-echo 'deb http://downloads-distro.mongodb.org/repo/debian-sysvinit dist 10gen' | tee /etc/apt/sources.list >> /var/log/mevdds/opencache.log
+echo 'deb http://downloads-distro.mongodb.org/repo/debian-sysvinit dist 10gen' | tee -a /etc/apt/sources.list >> /var/log/mevdds/opencache.log
 # Update
 apt-get update
 
