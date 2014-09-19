@@ -1,0 +1,528 @@
+OFELIANEC4> show openflow table detail
+Date 2014/09/17 15:22:55 UTC
+
+FLOW entries information
+
+[OpenFlow 1]
+
+ <entry 869>
+  table type              : normal
+  forwarding state        : hardware-based
+  matched octets          :                    -
+  matched packets         :                    0 packet
+  idle timer(max/current) :        0 sec /     0 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                32767
+  added time              : 2014/09/17 15:20:20 UTC
+  last modified time      : -
+  flow cookie             : a000002c4f0489(hex)
+
+  match
+   input port          : 0/12[0x000c]
+   src mac address     : 0203.0000.0060
+   dst mac address     : any
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : 0x0800
+   tos(dscp)           : any
+   ip protocol         : 6
+   src ip address      : 192.168.0.12
+   dst ip address      : 192.168.0.13
+   src l4 port         : any
+   dst l4 port         : 80
+
+  action 1
+   type                : OUTPUT
+   out port            : 0/1[0x0001]
+
+  action 2
+   type                : OUTPUT
+   out port            : 0/3[0x0003]
+
+  action 3
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
+
+<entry 870>
+  table type              : normal
+  forwarding state        : hardware-based
+  matched octets          :                    -
+  matched packets         :                    0 packet
+  idle timer(max/current) :        0 sec /     0 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                32767
+  added time              : 2014/09/17 15:20:20 UTC
+  last modified time      : -
+  flow cookie             : a000002c4f0489(hex)
+
+  match
+   input port          : 0/3[0x0003]
+   src mac address     : 0203.0000.0060
+   dst mac address     : any
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : 0x0800
+   tos(dscp)           : any
+   ip protocol         : 6
+   src ip address      : 192.168.0.12
+   dst ip address      : 192.168.0.13
+   src l4 port         : any
+   dst l4 port         : 80
+
+  action 1
+   type                : OUTPUT
+   out port            : 0/1[0x0001]
+
+  action 2
+   type                : OUTPUT
+   out port            : 0/3[0x0003]
+
+  action 3
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
+
+ <entry 871>
+  table type              : normal
+  forwarding state        : hardware-based
+  matched octets          :                    -
+  matched packets         :                    0 packet
+  idle timer(max/current) :        0 sec /     0 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                32767
+  added time              : 2014/09/17 15:20:20 UTC
+  last modified time      : -
+  flow cookie             : a000002c4f0489(hex)
+
+  match
+   input port          : 0/1[0x0001]
+   src mac address     : 0203.0000.0060
+   dst mac address     : any
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : 0x0800
+   tos(dscp)           : any
+   ip protocol         : 6
+   src ip address      : 192.168.0.12
+   dst ip address      : 192.168.0.13
+   src l4 port         : any
+   dst l4 port         : 80
+
+  action 1
+   type                : OUTPUT
+   out port            : 0/1[0x0001]
+
+  action 2
+   type                : OUTPUT
+   out port            : 0/3[0x0003]
+
+  action 3
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
+
+ <entry 872>
+  table type              : normal
+  forwarding state        : software-based
+  matched octets          :                    -
+  matched packets         :                   37 packets
+  idle timer(max/current) :        0 sec /     0 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                32766
+  added time              : 2014/09/17 15:20:20 UTC
+  last modified time      : -
+  flow cookie             : a00000d4ee8df7(hex)
+
+  match
+   input port          : 0/12[0x000c]
+   src mac address     : 0203.0000.0060
+   dst mac address     : any
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : 0x0800
+   tos(dscp)           : any
+   ip protocol         : 6
+   src ip address      : 192.168.0.12
+   dst ip address      : any
+   src l4 port         : 49003
+   dst l4 port         : any
+
+  action 1
+   type                : SET_TP_SRC
+   out src l4 port     : 80
+
+  action 2
+   type                : SET_NW_SRC
+   out src ip address  : 192.168.0.13
+
+  action 3
+   type                : OUTPUT
+   out port            : 0/1[0x0001]
+
+  action 4
+   type                : OUTPUT
+   out port            : 0/3[0x0003]
+
+  action 5
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
+
+ <entry 873>
+  table type              : normal
+  forwarding state        : software-based
+  matched octets          :                    -
+  matched packets         :                    0 packet
+  idle timer(max/current) :        0 sec /     0 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                32766
+  added time              : 2014/09/17 15:20:20 UTC
+  last modified time      : -
+  flow cookie             : a00000d4ee8df7(hex)
+
+  match
+   input port          : 0/3[0x0003]
+   src mac address     : 0203.0000.0060
+   dst mac address     : any
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : 0x0800
+   tos(dscp)           : any
+   ip protocol         : 6
+   src ip address      : 192.168.0.12
+   dst ip address      : any
+   src l4 port         : 49003
+   dst l4 port         : any
+
+  action 1
+   type                : SET_TP_SRC
+   out src l4 port     : 80
+
+  action 2
+   type                : SET_NW_SRC
+   out src ip address  : 192.168.0.13
+
+  action 3
+   type                : OUTPUT
+   out port            : 0/1[0x0001]
+
+  action 4
+   type                : OUTPUT
+   out port            : 0/3[0x0003]
+
+  action 5
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
+
+ <entry 874>
+  table type              : normal
+  forwarding state        : software-based
+  matched octets          :                    -
+  matched packets         :                    0 packet
+  idle timer(max/current) :        0 sec /     0 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                32766
+  added time              : 2014/09/17 15:20:20 UTC
+  last modified time      : -
+  flow cookie             : a00000d4ee8df7(hex)
+
+  match
+   input port          : 0/1[0x0001]
+   src mac address     : 0203.0000.0060
+   dst mac address     : any
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : 0x0800
+   tos(dscp)           : any
+   ip protocol         : 6
+   src ip address      : 192.168.0.12
+   dst ip address      : any
+   src l4 port         : 49003
+   dst l4 port         : any
+
+  action 1
+   type                : SET_TP_SRC
+   out src l4 port     : 80
+
+  action 2
+   type                : SET_NW_SRC
+   out src ip address  : 192.168.0.13
+
+  action 3
+   type                : OUTPUT
+   out port            : 0/1[0x0001]
+
+  action 4
+   type                : OUTPUT
+   out port            : 0/3[0x0003]
+
+  action 5
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
+
+ <entry 875>
+  table type              : normal
+  forwarding state        : software-based
+  matched octets          :                    -
+  matched packets         :                    0 packet
+  idle timer(max/current) :        0 sec /     0 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                32766
+  added time              : 2014/09/17 15:20:20 UTC
+  last modified time      : -
+  flow cookie             : a0000019bf95a8(hex)
+
+  match
+   input port          : 0/12[0x000c]
+   src mac address     : any
+   dst mac address     : any
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : 0x0800
+   tos(dscp)           : any
+   ip protocol         : 6
+   src ip address      : any
+   dst ip address      : 192.168.0.13
+   src l4 port         : any
+   dst l4 port         : 80
+
+  action 1
+   type                : SET_DL_DST
+   out dst mac address : 0203.0000.0060
+
+  action 2
+   type                : SET_NW_DST
+   out dst ip address  : 192.168.0.12
+
+  action 3
+   type                : SET_TP_DST
+   out dst l4 port     : 49003
+
+  action 4
+   type                : OUTPUT
+   out port            : 0/1[0x0001]
+
+  action 5
+   type                : OUTPUT
+   out port            : 0/3[0x0003]
+
+  action 6
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
+
+ <entry 876>
+  table type              : normal
+  forwarding state        : software-based
+  matched octets          :                    -
+  matched packets         :                   99 packets
+  idle timer(max/current) :        0 sec /     0 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                32766
+  added time              : 2014/09/17 15:20:20 UTC
+  last modified time      : -
+  flow cookie             : a0000019bf95a8(hex)
+
+  match
+   input port          : 0/3[0x0003]
+   src mac address     : any
+   dst mac address     : any
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : 0x0800
+   tos(dscp)           : any
+   ip protocol         : 6
+   src ip address      : any
+   dst ip address      : 192.168.0.13
+   src l4 port         : any
+   dst l4 port         : 80
+
+  action 1
+   type                : SET_DL_DST
+   out dst mac address : 0203.0000.0060
+
+  action 2
+   type                : SET_NW_DST
+   out dst ip address  : 192.168.0.12
+
+  action 3
+   type                : SET_TP_DST
+   out dst l4 port     : 49003
+
+  action 4
+   type                : OUTPUT
+   out port            : 0/1[0x0001]
+
+  action 5
+   type                : OUTPUT
+   out port            : 0/3[0x0003]
+
+  action 6
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
+
+ <entry 877>
+  table type              : normal
+  forwarding state        : software-based
+  matched octets          :                    -
+  matched packets         :                    0 packet
+  idle timer(max/current) :        0 sec /     0 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                32766
+  added time              : 2014/09/17 15:20:20 UTC
+  last modified time      : -
+  flow cookie             : a0000019bf95a8(hex)
+
+  match
+   input port          : 0/1[0x0001]
+   src mac address     : any
+   dst mac address     : any
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : 0x0800
+   tos(dscp)           : any
+   ip protocol         : 6
+   src ip address      : any
+   dst ip address      : 192.168.0.13
+   src l4 port         : any
+   dst l4 port         : 80
+
+  action 1
+   type                : SET_DL_DST
+   out dst mac address : 0203.0000.0060
+
+  action 2
+   type                : SET_NW_DST
+   out dst ip address  : 192.168.0.12
+
+  action 3
+   type                : SET_TP_DST
+   out dst l4 port     : 49003
+
+  action 4
+   type                : OUTPUT
+   out port            : 0/1[0x0001]
+
+  action 5
+   type                : OUTPUT
+   out port            : 0/3[0x0003]
+
+  action 6
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
+
+ <entry 1025>
+  table type              : normal
+  forwarding state        : hardware-based
+  matched octets          :                    -
+  matched packets         :                    0 packet
+  idle timer(max/current) :        5 sec /     5 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                    0
+  added time              : 2014/09/17 15:21:27 UTC
+  last modified time      : -
+  flow cookie             : 20000000000000(hex)
+
+  match
+   input port          : 0/3[0x0003]
+   src mac address     : 0203.0000.008c
+   dst mac address     : 0203.0000.0060
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : any
+   tos(dscp)           : any
+   ip protocol         : any
+   src ip address      : any
+   dst ip address      : any
+   src l4 port         : any
+   dst l4 port         : any
+
+  action 1
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
+
+ <entry 1026>
+  table type              : normal
+  forwarding state        : hardware-based
+  matched octets          :                    -
+  matched packets         :                    0 packet
+  idle timer(max/current) :        5 sec /     4 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                    0
+  added time              : 2014/09/17 15:21:26 UTC
+  last modified time      : -
+  flow cookie             : 20000000000000(hex)
+
+  match
+   input port          : 0/12[0x000c]
+   src mac address     : 0203.0000.0060
+   dst mac address     : 0203.0000.008c
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : any
+   tos(dscp)           : any
+   ip protocol         : any
+   src ip address      : any
+   dst ip address      : any
+   src l4 port         : any
+   dst l4 port         : any
+
+  action 1
+   type                : OUTPUT
+   out port            : 0/3[0x0003]
+
+ <entry 1028>
+  table type              : normal
+  forwarding state        : hardware-based
+  matched octets          :                    -
+  matched packets         :                    8 packets
+  idle timer(max/current) :        5 sec /     5 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                    0
+  added time              : 2014/09/17 15:21:25 UTC
+  last modified time      : -
+  flow cookie             : 20000000000000(hex)
+
+  match
+   input port          : 0/12[0x000c]
+   src mac address     : 0203.0000.0060
+   dst mac address     : 0203.0000.005a
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : any
+   tos(dscp)           : any
+   ip protocol         : any
+   src ip address      : any
+   dst ip address      : any
+   src l4 port         : any
+   dst l4 port         : any
+
+  action 1
+   type                : OUTPUT
+   out port            : 0/1[0x0001]
+
+ <entry 1029>
+  table type              : normal
+  forwarding state        : hardware-based
+  matched octets          :                    -
+  matched packets         :                    7 packets
+  idle timer(max/current) :        5 sec /     5 sec
+  hard timer(max/current) :        0 sec /     0 sec
+  priority                :                    0
+  added time              : 2014/09/17 15:21:25 UTC
+  last modified time      : -
+  flow cookie             : 20000000000000(hex)
+
+  match
+   input port          : 0/1[0x0001]
+   src mac address     : 0203.0000.005a
+   dst mac address     : 0203.0000.0060
+   input vlan          : 180
+   input vlan pcp      : any
+   ethernet type       : any
+   tos(dscp)           : any
+   ip protocol         : any
+   src ip address      : any
+   dst ip address      : any
+   src l4 port         : any
+   dst l4 port         : any
+
+  action 1
+   type                : OUTPUT
+   out port            : 0/12[0x000c]
