@@ -10,7 +10,7 @@ echo "[Install ant + unzip]" | tee -a /var/log/mevdds/floodlight.log
 apt-get install -y ant unzip >> /var/log/mevdds/floodlight.log
 
 ## wget zip file
-echo "wget floodlight v0.90"
+echo "[wget floodlight v0.90]"
 wget https://github.com/sBaildon/floodlight/archive/master.zip -a /var/log/mevdds/floodlight.log
 
 ## unzip floodlight
