@@ -9,27 +9,32 @@
 	http://www.geni.net/resources/rspec/ext/openflow/3/of-resv.xsd"
 	type="request">
 	<openflow:sliver email="d.butterworth@lancaster.ac.uk" description="MEVDDS-SimpleOF">
-		<openflow:controller url="tcp:10.216.12.43:6633" type="primary"/>
+		<openflow:controller url="tcp:10.216.12.28:6633" type="primary"/>
 		<openflow:group name="fs1">
 			<openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:01" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:01">
-				<openflow:port num="4" name="GBE0/4"/>
+				<openflow:port num="4" name="GBE0/4"/> <!-- SW 00:10:04 -->
+				<openflow:port num="11" name="GBE0/11"/> <!-- iMinds 01::ff -->
 				<openflow:port num="12" name="GBE0/12"/> <!-- Verdaguer -->
 			</openflow:datapath>
 			<openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:03" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:03">
-				<openflow:port num="4" name="GBE0/4"/>
-				<openflow:port num="9" name="GBE0/9"/>
+				<openflow:port num="4" name="GBE0/4"/> <!-- SW 00:10:04 -->
+				<openflow:port num="9" name="GBE0/9"/> <!-- uBris Interconnect -->
+				<openflow:port num="10" name="GBE0/10"/> <!-- iMinds VM-GW-A -->
+				<openflow:port num="11" name="GBE0/11"/> <!-- iMinds VM-GW-B -->
 				<openflow:port num="12" name="GBE0/12"/> <!-- Rodoreda -->
 			</openflow:datapath>
 			<openflow:datapath component_id="urn:publicid:IDN+openflow:i2cat.ofam+datapath+00:10:00:00:00:00:00:04" component_manager_id="urn:publicid:IDN+openflow:i2cat.ofam+cm" dpid="00:10:00:00:00:00:00:04">
-				<openflow:port num="1" name="GBE0/1"/>
-				<openflow:port num="3" name="GBE0/3"/>
+				<openflow:port num="1" name="GBE0/1"/> <!-- SW 00:10:01 -->
+				<openflow:port num="3" name="GBE0/3"/> <!-- SW 00:10:03 -->
+				<openflow:port num="10" name="GBE0/10"/> <!-- iMinds VM-GW-C -->
+				<openflow:port num="11" name="GBE0/11"/> <!-- iMinds VM-GW-D -->
 				<openflow:port num="12" name="GBE0/12"/> <!-- March -->
 			</openflow:datapath>
 		</openflow:group>
 		<openflow:match>
 			<openflow:use-group name="fs1" />
 			<openflow:packet>
-				<openflow:dl_vlan value="180"/>
+				<openflow:dl_vlan value="190"/>
 			</openflow:packet>
 		</openflow:match>
 	</openflow:sliver>
