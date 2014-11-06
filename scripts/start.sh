@@ -8,6 +8,7 @@ cd $DIR
 
 echo "Creating log dir at /var/log/mevdds/"
 mkdir -p /var/log/mevdds/
+echo "Performing apt-get update"
 apt-get update >> /dev/null
 
 echo "Starting install" >> /var/log/mevdds/install.log
