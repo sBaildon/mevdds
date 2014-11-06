@@ -7,7 +7,7 @@
 	http://www.geni.net/resources/rspec/ext/openflow/3
 	http://www.geni.net/resources/rspec/ext/openflow/3/of-resv.xsd"
 	type="request">
-	<openflow:sliver email="d.butterworth@lancaster.ac.uk" description="MEVDDS-SimpleOF">
+	<openflow:sliver email="s.baildon@lancaster.ac.uk" description="MEVDDS-SimpleOF">
 		<openflow:controller url="tcp:10.216.22.73:6633" type="primary"/>
 		<openflow:group name="fs1">
 			<openflow:datapath component_id="urn:publicid:IDN+openflow:ofam:univbris+datapath+05:00:00:00:00:00:00:01" component_manager_id="urn:publicid:IDN+openflow:ofam:univbris+authority+cm" dpid="05:00:00:00:00:00:00:01">

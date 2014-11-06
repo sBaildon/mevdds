@@ -2,17 +2,17 @@
 	<node client_id="ocNode" component_id="urn:publicid:IDN+vtam.univbris+node+cseedurham" component_manager_id="urn:publicid:IDN+vtam.univbris+authority+cm" exclusive="false">
 		<sliver_type name="ofelia-vm"/>
 	</node>
-	<node client_id="oServer" component_id="urn:publicid:IDN+vtam.univbris+node+cseedurham" component_manager_id="urn:publicid:IDN+vtam.univbris+authority+cm" exclusive="false">
+	<node client_id="node1" component_id="urn:publicid:IDN+vtam.univbris+node+cseedurham" component_manager_id="urn:publicid:IDN+vtam.univbris+authority+cm" exclusive="false">
 		<sliver_type name="ofelia-vm"/>
 	</node>
 
-	<node client_id="ofContr" component_id="urn:publicid:IDN+vtam.univbris+node+cseedelphi" component_manager_id="urn:publicid:IDN+vtam.univbris+authority+cm" exclusive="false">
+	<node client_id="node2" component_id="urn:publicid:IDN+vtam.univbris+node+cseedelphi" component_manager_id="urn:publicid:IDN+vtam.univbris+authority+cm" exclusive="false">
 		<sliver_type name="ofelia-vm"/>
 	</node>
-	<node client_id="ocContr" component_id="urn:publicid:IDN+vtam.univbris+node+cseedelphi" component_manager_id="urn:publicid:IDN+vtam.univbris+authority+cm" exclusive="false">
+	<node client_id="node3" component_id="urn:publicid:IDN+vtam.univbris+node+cseedelphi" component_manager_id="urn:publicid:IDN+vtam.univbris+authority+cm" exclusive="false">
 		<sliver_type name="ofelia-vm"/>
 	</node>
-	<node client_id="node" component_id="urn:publicid:IDN+vtam.univbris+node+cseedelphi" component_manager_id="urn:publicid:IDN+vtam.univbris+authority+cm" exclusive="false">
+	<node client_id="node4" component_id="urn:publicid:IDN+vtam.univbris+node+cseedelphi" component_manager_id="urn:publicid:IDN+vtam.univbris+authority+cm" exclusive="false">
 		<sliver_type name="ofelia-vm"/>
 	</node>
 </rspec>
