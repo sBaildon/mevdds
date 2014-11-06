@@ -19,6 +19,8 @@ elif [ $1 == 'tools' ]; then
   bash 'generic/tools/setup.sh'
 elif [ $1 == 'floodlight' ]; then
   bash 'generic/floodlight/setup.sh'
+elif [ $1 == 'scootplayer' ]; then
+  bash 'generic/scootplayer/setup.sh'
 fi
 
 echo "Completed install" >> /var/log/mevdds/install.log
