@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:delay="http://www.protogeni.net/resources/rspec/ext/delay/1" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:jfed="http://jfed.iminds.be/rspec/ext/jfed/1" xmlns:jfed-command="http://jfed.iminds.be/rspec/ext/jfed-command/1" xmlns:jfed-ssh-keys="http://jfed.iminds.be/rspec/ext/jfed-ssh-keys/1" xmlns:jfedBonfire="http://jfed.iminds.be/rspec/ext/jfed-bonfire/1" xmlns:sharedvlan="http://www.protogeni.net/resources/rspec/ext/shared-vlan/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated="2014-10-31T16:08:46.461Z" generated_by="jFed RSpec Editor" type="manifest" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd ">
+    <node client_id="node1" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+node+n097-18a" component_manager_id="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm" exclusive="true" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35485">
+        <sliver_type name="raw-pc">
+            <disk_image name="urn:publicid:IDN+wall2.ilabt.iminds.be+image+emulab-ops:Ubuntu12-64-OVS"/>
+        </sliver_type>
+        <services>
+            <login authentication="ssh-keys" hostname="n097-18a.wall2.ilabt.iminds.be" port="22" username="sBaildon"/>
+        </services>
+        <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="131.5" y="302.5"/>
+        <interface client_id="node1:if0" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n097-18a:eth3" mac_address="024eddc31384" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35492">
+            <ip address="192.168.1.1" type="ipv4"/>
+        </interface>
+        <interface client_id="node1:if1" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n097-18a:eth2" mac_address="00259065bcf0" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35494">
+            <ip address="192.168.0.1" netmask="255.255.255.0" type="ipv4"/>
+        </interface>
+        <emulab:vnode name="n097-18a"/>
+        <host name="node1.mevim.wall2-ilabt-iminds-be.wall2.ilabt.iminds.be"/>
+    </node>
+    <node client_id="node2" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+node+n095-08a" component_manager_id="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm" exclusive="true" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35487">
+        <sliver_type name="raw-pc"/>
+        <services>
+            <login authentication="ssh-keys" hostname="n095-08a.wall2.ilabt.iminds.be" port="22" username="sBaildon"/>
+        </services>
+        <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="27.5" y="217.5"/>
+        <interface client_id="node2:if0" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n095-08a:eth2" mac_address="90e2ba00a2a4" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35495">
+            <ip address="192.168.0.2" netmask="255.255.255.0" type="ipv4"/>
+        </interface>
+        <emulab:vnode name="n095-08a"/>
+        <host name="node2.mevim.wall2-ilabt-iminds-be.wall2.ilabt.iminds.be"/>
+    </node>
+    <node client_id="node3" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+node+n095-12a" component_manager_id="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm" exclusive="true" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35486">
+        <sliver_type name="raw-pc"/>
+        <services>
+            <login authentication="ssh-keys" hostname="n095-12a.wall2.ilabt.iminds.be" port="22" username="sBaildon"/>
+        </services>
+        <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="70.5" y="153.5"/>
+        <interface client_id="node3:if0" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n095-12a:eth2" mac_address="90e2ba009e90" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35496">
+            <ip address="192.168.0.3" netmask="255.255.255.0" type="ipv4"/>
+        </interface>
+        <emulab:vnode name="n095-12a"/>
+        <host name="node3.mevim.wall2-ilabt-iminds-be.wall2.ilabt.iminds.be"/>
+    </node>
+    <node client_id="node4" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+node+n096-11b" component_manager_id="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm" exclusive="true" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35488">
+        <sliver_type name="raw-pc"/>
+        <services>
+            <login authentication="ssh-keys" hostname="n096-11b.wall2.ilabt.iminds.be" port="22" username="sBaildon"/>
+        </services>
+        <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="200.5" y="153.5"/>
+        <interface client_id="node4:if0" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n096-11b:eth1" mac_address="002590842fab" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35497">
+            <ip address="192.168.0.4" netmask="255.255.255.0" type="ipv4"/>
+        </interface>
+        <emulab:vnode name="n096-11b"/>
+        <host name="node4.mevim.wall2-ilabt-iminds-be.wall2.ilabt.iminds.be"/>
+    </node>
+    <node client_id="node5" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+node+n096-10a" component_manager_id="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm" exclusive="true" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35489">
+        <sliver_type name="raw-pc"/>
+        <services>
+            <login authentication="ssh-keys" hostname="n096-10a.wall2.ilabt.iminds.be" port="22" username="sBaildon"/>
+        </services>
+        <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="236.5" y="217.5"/>
+        <interface client_id="node5:if0" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n096-10a:eth1" mac_address="002590842fa9" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35498">
+            <ip address="192.168.0.5" netmask="255.255.255.0" type="ipv4"/>
+        </interface>
+        <emulab:vnode name="n096-10a"/>
+        <host name="node5.mevim.wall2-ilabt-iminds-be.wall2.ilabt.iminds.be"/>
+    </node>
+    <node client_id="node0" component_manager_id="urn:publicid:IDN+i2cat190-edge.ilabt.iminds.be+authority+cm" exclusive="false">
+        <sliver_type name="fake"/>
+        <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="131.5" y="416.5"/>
+        <interface client_id="node0:if0"/>
+    </node>
+    <link client_id="link0" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35491">
+        <component_manager name="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm"/>
+        <component_manager name="urn:publicid:IDN+i2cat190-edge.ilabt.iminds.be+authority+cm"/>
+        <interface_ref client_id="node1:if0" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n097-18a:eth3" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35492"/>
+        <interface_ref client_id="node0:if0"/>
+    </link>
+    <link client_id="link1" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35493">
+        <component_manager name="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm"/>
+        <interface_ref client_id="node1:if1" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n097-18a:eth2" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35494"/>
+        <interface_ref client_id="node2:if0" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n095-08a:eth2" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35495"/>
+        <interface_ref client_id="node3:if0" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n095-12a:eth2" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35496"/>
+        <interface_ref client_id="node4:if0" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n096-11b:eth1" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35497"/>
+        <interface_ref client_id="node5:if0" component_id="urn:publicid:IDN+wall2.ilabt.iminds.be+interface+n096-10a:eth1" sliver_id="urn:publicid:IDN+wall2.ilabt.iminds.be+sliver+35498"/>
+        <link_type name="lan"/>
+    </link>
+</rspec>
+
