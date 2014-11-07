@@ -7,10 +7,10 @@ echo "[Python-setup]" | tee -a /var/log/mevdds/python-setup.log
 
 if grep -q 6.* /etc/debian_version; then
 	echo "[Debian 6 detected]" | tee -a /var/log/mevdds/python-setup.log
-	apt-get -y install build-essential libsqlite3-dev zlib1g-dev libncurses5-dev libgdbm-dev libbz2-dev libreadline5-dev libssl-dev libdb-dev curl python-dev git vim unzip >> /var/log/mevdds/python-setup.log
+	apt-get -y install python-dev git vim unzip build-essential libsqlite3-dev zlib1g-dev libncurses5-dev libgdbm-dev libbz2-dev libreadline5-dev libssl-dev libdb-dev curl >> /var/log/mevdds/python-setup.log
 elif grep -q 7.* /etc/debian_version; then
 	echo "[Debian 7 detected]" | tee -a /var/log/mevdds/python-setup.log
-	apt-get -y install build-essential libsqlite3-dev zlib1g-dev libncurses5-dev libgdbm-dev libbz2-dev libreadline-gplv2-dev libssl-dev libdb-dev curl python-dev git vim unzip >> /var/log/mevdds/python-setup.log
+	apt-get -y python-dev git vim unzip install build-essential libsqlite3-dev zlib1g-dev libncurses5-dev libgdbm-dev libbz2-dev libreadline-gplv2-dev libssl-dev libdb-dev curl >> /var/log/mevdds/python-setup.log
 else
 	echo "[ERROR] Unknown Debian version" | tee -a /var/log/mevdds/python-setup.log
 	return -1
