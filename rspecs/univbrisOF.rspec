@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rspec  xmlns="http://www.geni.net/resources/rspec/3"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:openflow="http://www.geni.net/resources/rspec/ext/openflow/3"
+	xs:schemaLocation="http://www.geni.net/resources/rspec/3
+	http://www.geni.net/resources/rspec/3/request.xsd
+	http://www.geni.net/resources/rspec/ext/openflow/3
+	http://www.geni.net/resources/rspec/ext/openflow/3/of-resv.xsd"
+	type="request">
+	<openflow:sliver email="s.baildon@lancaster.ac.uk" description="MEVDDS-SimpleOF">
+		<openflow:controller url="tcp:10.216.22.73:6633" type="primary"/>
+		<openflow:group name="fs1">
+			<openflow:datapath component_id="urn:publicid:IDN+openflow:ofam:univbris+datapath+05:00:00:00:00:00:00:01" component_manager_id="urn:publicid:IDN+openflow:ofam:univbris+authority+cm" dpid="05:00:00:00:00:00:00:01">
+				<openflow:port num="6" name="GBE0/6"/> <!-- delphi connection -->
+				<openflow:port num="22" name="GBE0/22"/> <!-- Sw 05::04 -->
+			</openflow:datapath>
+			<openflow:datapath component_id="urn:publicid:IDN+openflow:ofam:univbris+datapath+05:00:00:00:00:00:00:04" component_manager_id="urn:publicid:IDN+openflow:ofam:univbris+authority+cm" dpid="05:00:00:00:00:00:00:04">
+				<openflow:port num="8" name="GBE0/8"/> <!-- durham connection -->
+				<openflow:port num="11" name="GBE0/11"/> <!-- Sw 05::01 -->
+				<openflow:port num="16" name="GBE0/16"/> <!-- Sw 05::03 -->
+			</openflow:datapath>
+			<openflow:datapath component_id="urn:publicid:IDN+openflow:ofam:univbris+datapath+05:00:00:00:00:00:00:03" component_manager_id="urn:publicid:IDN+openflow:ofam:univbris+authority+cm" dpid="05:00:00:00:00:00:00:03">
+				<openflow:port num="7" name="GBE0/7"/> <!-- i2cat interconnect -->
+				<openflow:port num="15" name="GBE0/15"/> <!-- Sw 05::04 -->
+			</openflow:datapath>
+		</openflow:group>
+		<openflow:match>
+			<openflow:use-group name="fs1" />
+			<openflow:packet>
+				<openflow:dl_vlan value= "190"/>
+			</openflow:packet>
+		</openflow:match>
+	</openflow:sliver>
+</rspec>
